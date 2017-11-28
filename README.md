@@ -68,6 +68,7 @@ Project requirements need the server to only allow incoming connections for SSH 
 
 # Install PostgreSQL
 1. $ sudo apt-get install postgresql postgresql-contrib
+2. Create a new database user named catalog : $ sudo -u postgres createdb catalog
 
 # Install Git
 1. $ sudo apt-get install git
