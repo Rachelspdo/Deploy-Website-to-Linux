@@ -1,11 +1,12 @@
 # LINUX-PROJECT
 Log-in as ```ssh ubuntu@54.189.193.41 -i ~/.ssh/myudacitykey.pem ```
+
 # Create New User Name : GRADER
 1. ```$ sudo adduser grader```
 
 2. Give User permission to sudo: ```$ sudo nano /etc/sudoers.d/grader ```
 
-Add: grader ALL=(ALL) NOPASSWD:ALL
+	Add: grader ALL=(ALL) NOPASSWD:ALL
   
 # Update all currently installed packages
 1. ```$ sudo apt-get update ```
