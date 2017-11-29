@@ -119,8 +119,9 @@ Run ```$ sudo dpkg-reconfigure tzdata``` and then choose  ```None of the above``
 
 9. Rename application.py to ```__init__.py``` using ```$ sudo mv application.py __init__.py```
 
-10. Edit database_setup.py, ```__init__.py``` by ```$ sudo nano database_setup/ __init__.py``` and change engine = create_engine('sqlite:///restaurantmenuwithusers.db') to engine = create_engine('postgresql://catalog:udacity@localhost/catalog')
+10. Edit ```database_setup.py, lotsofmenus.py, __init__.py``` by ```$ sudo nano database_setup/ __init__.py``` and change engine = create_engine('sqlite:///restaurantmenuwithusers.db') to engine = create_engine('postgresql://catalog:udacity@localhost/catalog')
 
+11. ```python lotsofmenus.py``` to import sample data to site
 
 # Setting up a virtual environment
 
@@ -158,12 +159,13 @@ Run ```$ sudo dpkg-reconfigure tzdata``` and then choose  ```None of the above``
 	Add this to file:
   ```
   #!/usr/bin/python
-	import sys
-	import logging
-	logging.basicConfig(stream=sys.stderr)
-	sys.path.insert(0,"/var/www/catalog/")
-
-	from catalog import app as application
+  import sys
+  import logging
+  logging.basicConfig(stream=sys.stderr)
+  sys.path.insert(0,"/var/www/catalog/")
+  from catalog import app as application
+  
+  application.secret_key = "supersecretkey"
   ```
   
   # Configure and enable a new virtual host
@@ -197,11 +199,37 @@ Run ```$ sudo dpkg-reconfigure tzdata``` and then choose  ```None of the above``
 
   ```$ sudo a2ensite catalog```
 
+# Update Google authentication
+
+1. ```$ sudo nano client_secrets.json```
+
+2. Add to Authorized Javascript Origin:
+
+	```http://54.189.193.41```
+	
+	```http://ec2-189-193-41.us-west-2.compute.amazonaws.com```
+	
+3. Add Authorized Redirect URL
+
+	```http://ec2-189-193-41.us-west-2.compute.amazonaws.com```
+	
+4. Go to ```console.developers.google.com``` and also add the above addresses to the OAuth Credencials
 
 # Restart Apache
 
 Restart Apache with the following command to apply the changes:
 
 ```$ sudo service apache2 restart```
+
+# Disable default site:
+
+```$ sudo a2dissite 000-default.conf ```
+
+__Catalog Application will be avalable at: __
+
+http://54.189.193.41
+
+http://ec2-189-193-41.us-west-2.compute.amazonaws.com
+
 
 
