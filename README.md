@@ -107,12 +107,10 @@ Run sudo dpkg-reconfigure tzdata and then choose  None of the above and choose U
 
 4. $ sudo chown -R grader:grader catalog to change owner 
 
-5. Switch to grader 
-
 6. Cd /var/www/catalog
 
 7. Clone project into above direction:
-   git clone https://github.com/Rachelspdo/Build-Catalog.git 
+   git clone https://github.com/Rachelspdo/Build-Catalog.git catalog
    
 8. Cd Build-Catalog
 
@@ -178,11 +176,11 @@ Run sudo dpkg-reconfigure tzdata and then choose  None of the above and choose U
     WSGIDaemonProcess catalog python-path=/var/www/catalog:/var/www/catalog/venv/lib/python2.7/site-packages
     WSGIProcessGroup catalog
     WSGIScriptAlias / /var/www/catalog/catalog.wsgi
-    <Directory /var/www/catalog/Build-Catalog/>
+    <Directory /var/www/catalog/catalog/>
         Order allow,deny
         Allow from all
     </Directory>
-    Alias /static /var/www/catalog/Build-Catalog/static
+    Alias /static /var/www/catalog/catalog/static
     <Directory /var/www/catalog/Build-Catalog/static/>
         Order allow,deny
         Allow from all
