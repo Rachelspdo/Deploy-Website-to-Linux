@@ -170,9 +170,9 @@ Run sudo dpkg-reconfigure tzdata and then choose  None of the above and choose U
 2. Add to file: 
 ```
 <VirtualHost *:80>
-    ServerName 54.214.110.170
-    ServerAlias ec2-54-214-110-170.us-west-2.compute.amazonaws.com
-    ServerAdmin admin@52.34.208.247
+    ServerName 54.189.193.41
+    ServerAlias ec2-54-189-193-41.us-west-2.compute.amazonaws.com
+    ServerAdmin admin@54.189.193.41
     WSGIDaemonProcess catalog python-path=/var/www/catalog:/var/www/catalog/venv/lib/python2.7/site-packages
     WSGIProcessGroup catalog
     WSGIScriptAlias / /var/www/catalog/catalog.wsgi
