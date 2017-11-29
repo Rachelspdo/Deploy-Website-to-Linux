@@ -155,6 +155,10 @@ Run ```$ sudo dpkg-reconfigure tzdata``` and then choose  ```None of the above``
   ```
 8. Create database: ```$ sudo python database_setup.py```
 
+# Give fullpath to client_secrets.json
+
+1. Change path to client-secrets.json file to ```/var/www/catalog/catalog/client_secrets.json```
+
 # Create .wsgi:
 1. ```cd /var/www/catalog```
 
