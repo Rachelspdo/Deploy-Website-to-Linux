@@ -109,12 +109,12 @@ Run sudo dpkg-reconfigure tzdata and then choose  None of the above and choose U
 
 5. Switch to grader 
 
-6. Cd catalog
+6. Cd /var/www/catalog
 
 7. Clone project into above direction:
-   git clone https://github.com/Rachelspdo/Build-Catalog.git catalog
+   git clone https://github.com/Rachelspdo/Build-Catalog.git 
    
-8. Cd Build-Catalog catalog
+8. Cd Build-Catalog
 
 9. Rename application.py to __init__.py using $ sudo mv application.py __init__.py
 
@@ -176,13 +176,13 @@ Run sudo dpkg-reconfigure tzdata and then choose  None of the above and choose U
     ServerAdmin admin@52.34.208.247
     WSGIDaemonProcess catalog python-path=/var/www/catalog:/var/www/catalog/venv/lib/python2.7/site-packages
     WSGIProcessGroup catalog
-    WSGIScriptAlias / /var/www/catalog/catalog.wsgi
-    <Directory /var/www/catalog/catalog/>
+    WSGIScriptAlias / /var/www/catalog/Build-Catalog.wsgi
+    <Directory /var/www/catalog/Build-Catalog/>
         Order allow,deny
         Allow from all
     </Directory>
-    Alias /static /var/www/catalog/catalog/static
-    <Directory /var/www/catalog/catalog/static/>
+    Alias /static /var/www/catalog/Build-Catalog/static
+    <Directory /var/www/catalog/Build-Catalog/static/>
         Order allow,deny
         Allow from all
     </Directory>
