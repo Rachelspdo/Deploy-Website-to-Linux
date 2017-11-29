@@ -130,9 +130,9 @@ Run ```$ sudo dpkg-reconfigure tzdata``` and then choose  ```None of the above``
 
 2. Install the virtual environment: ```$ sudo pip install virtualenv```
 
-3. Create a new virtual environment with ```$ sudo virtualenv venv```
+3. Create a new virtual environment: ```$ sudo virtualenv venv```
 
-4. Activate the virutal environment: ```source venv/bin/activate```
+4. To activate the virutal environment: ```source venv/bin/activate```
 
 5. Change permissions to the virtual environment folder: ```$ sudo chmod -R 777 venv```
 
