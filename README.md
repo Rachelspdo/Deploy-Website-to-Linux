@@ -116,7 +116,7 @@ Run sudo dpkg-reconfigure tzdata and then choose  None of the above and choose U
    
 8. Cd Build-Catalog
 
-9. Rename application.py to __init__.py using $ sudo mv application.py __init__.py
+9. Rename application.py to ```__init__.py``` using ```$ sudo mv application.py __init__.py```
 
 10. Edit database_setup.py, __init__.py by $ sudo nano database_setup/ __init__.py and change engine = create_engine('sqlite:///restaurantmenuwithusers.db') to engine = create_engine('postgresql://catalog:InputYourPassword@localhost/catalog')
 
