@@ -107,12 +107,11 @@ Run sudo dpkg-reconfigure tzdata and then choose  None of the above and choose U
 
 4. $ sudo chown -R grader:grader catalog to change owner 
 
-6. Cd /var/www/catalog
+6. Cd catalog
 
 7. Clone project into above direction:
    git clone https://github.com/Rachelspdo/Build-Catalog.git catalog
    
-8. Cd Build-Catalog
 
 9. Rename application.py to ```__init__.py``` using ```$ sudo mv application.py __init__.py```
 
