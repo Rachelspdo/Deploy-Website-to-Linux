@@ -26,7 +26,7 @@ Log-in to server as ```ssh ubuntu@54.189.193.41 -i ~/.ssh/myudacitykey.pem ```
 # Generate SSH-KEYGEN
 1. To generate key pair, locally (not connect with server ssh yet) : 
 
-```ssh-keygen -f ~/.ssh/graderkey ```
+	```ssh-keygen -f ~/.ssh/graderkey ```
 
 2. Log in as Grader :```$ sudo su - grader```
 
