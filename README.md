@@ -225,7 +225,7 @@ Restart Apache with the following command to apply the changes:
 
 ```$ sudo a2dissite 000-default.conf ```
 
-__Catalog Application will be avalable at: __
+## Catalog Application will be avalable at:
 
 http://54.189.193.41
 
