@@ -1,4 +1,5 @@
 # LINUX-PROJECT
+Log-in as ```ssh ubuntu@54.189.193.41 -i ~/.ssh/myudacitykey.pem ```
 # Create New User Name : GRADER
 1. sudo adduser grader
 
@@ -46,7 +47,7 @@ ssh-keygen -f ~/.ssh/graderkey
 
 3. Restart to run as new configuration: sudo service ssh restart
 
-grader user now can log in as ```ssh grader@IPaddress -p 2200 -i ~/.ssh/graderkey```
+grader user now can log in as ```ssh grader@54.189.193.41 -p 2200 -i ~/.ssh/graderkey```
 
 # Configure the Uncomplicated Firewall (UFW)
 Project requirements need the server to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123).
