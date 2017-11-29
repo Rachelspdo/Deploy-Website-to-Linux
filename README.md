@@ -111,7 +111,8 @@ Run sudo dpkg-reconfigure tzdata and then choose  None of the above and choose U
 
 7. Clone project into above direction:
    git clone https://github.com/Rachelspdo/Build-Catalog.git catalog
-   
+
+8. cd catalog
 
 9. Rename application.py to ```__init__.py``` using ```$ sudo mv application.py __init__.py```
 
@@ -180,7 +181,7 @@ Run sudo dpkg-reconfigure tzdata and then choose  None of the above and choose U
         Allow from all
     </Directory>
     Alias /static /var/www/catalog/catalog/static
-    <Directory /var/www/catalog/Build-Catalog/static/>
+    <Directory /var/www/catalog/catalog/static/>
         Order allow,deny
         Allow from all
     </Directory>
