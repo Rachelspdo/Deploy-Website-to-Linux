@@ -65,7 +65,7 @@ Project requirements need the server to only allow incoming connections for SSH 
 
 # Configure the local timezone to UTC
 
-Run sudo dpkg-reconfigure tzdata and then choose UTC
+Run sudo dpkg-reconfigure tzdata and then choose  None of the above and choose UTC.
 
 # Install Apache:
 1. $ sudo apt-get install apache2
