@@ -211,7 +211,6 @@ Run ```$ sudo dpkg-reconfigure tzdata``` and then choose  ```None of the above``
 
 	```http://54.189.193.41```
 	
-	```http://ec2-189-193-41.us-west-2.compute.amazonaws.com```
 	
 3. Add Authorized Redirect URL
 
@@ -233,7 +232,7 @@ Restart Apache with the following command to apply the changes:
 
 http://54.189.193.41
 
-http://ec2-189-193-41.us-west-2.compute.amazonaws.com
+
 
 
 
