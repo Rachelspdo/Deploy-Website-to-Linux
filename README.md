@@ -1,7 +1,10 @@
-# LINUX-PROJECT
-Log-in as ```ssh ubuntu@54.189.193.41 -i ~/.ssh/myudacitykey.pem ```
+# Project Overview
+
+You will take a baseline installation of a Linux server and prepare it to host your web applications. You will secure your server from a number of attack vectors, install and configure a database server, and deploy one of your existing web applications onto it.
 
 # Create New User Name : GRADER
+Log-in to server as ```ssh ubuntu@54.189.193.41 -i ~/.ssh/myudacitykey.pem ```
+
 1. ```$ sudo adduser grader```
 
 2. Give User permission to sudo: ```$ sudo nano /etc/sudoers.d/grader ```
