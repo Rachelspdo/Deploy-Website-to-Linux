@@ -37,14 +37,16 @@ ssh-keygen -f ~/.ssh/graderkey
 
 7. Set permission : chmod 700 .ssh
 
-8. And then cdmod 644 .ssh/authorized_keys
+8. And then chmod 644 .ssh/authorized_keys
 
 # Force all user log in using key pair:
-1. Back to grader server: sudo nano /etc/ssh/sshd-config
+1. Back to grader server: sudo nano /etc/ssh/sshd_config
 
 2. Look for this line : PasswordAuthentication. Change ‘yes’ to ‘no’. SAVE
 
 3. Restart to run as new configuration: sudo service ssh restart
+
+grader user now can log in as ```ssh grader@IPaddress -p 2200 -i ~/.ssh/graderkey```
 
 # Configure the Uncomplicated Firewall (UFW)
 Project requirements need the server to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123).
