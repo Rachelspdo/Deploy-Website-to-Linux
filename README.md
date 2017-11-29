@@ -123,7 +123,7 @@ Run ```$ sudo dpkg-reconfigure tzdata``` and then choose  ```None of the above``
 
 9. Rename application.py to ```__init__.py``` using ```$ sudo mv application.py __init__.py```
 
-10. Edit ```database_setup.py, lotsofmenus.py, __init__.py``` by ```$ sudo nano database_setup/ __init__.py``` and change engine = create_engine('sqlite:///restaurantmenuwithusers.db') to engine = create_engine('postgresql://catalog:udacity@localhost/catalog')
+10. Edit ```database_setup.py, lotsofmenus.py, __init__.py``` by ```$ sudo nano database_setup/lotsofmenus.py/__init__.py``` and change engine = create_engine('sqlite:///restaurantmenuwithusers.db') to engine = create_engine('postgresql://catalog:udacity@localhost/catalog')
 
 11. ```python lotsofmenus.py``` to import sample data to site
 
