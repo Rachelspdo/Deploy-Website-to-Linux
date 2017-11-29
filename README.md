@@ -4,7 +4,7 @@
 
 2. Give User permission to sudo: sudo nano /etc/sudoers.d/grader 
 
-Add: grader ALL=(ALL:ALL) ALL
+Add: grader ALL=(ALL) NOPASSWD:ALL
   
 # Update all currently installed packages
 1. $ sudo apt-get update 
@@ -134,11 +134,16 @@ Run sudo dpkg-reconfigure tzdata and then choose UTC
 6. Install Flask: $ sudo pip install Flask
 
 7. Install other dependencies:
-	```sudo apt-get install python-psycopg2 python-flask
+
+	sudo apt-get install python-psycopg2 python-flask
+	
 	sudo apt-get install python-sqlalchemy python-pip
+	
 	sudo pip install oauth2client
+	
 	sudo pip install requests
-	sudo pip install httplib2```
+	
+	sudo pip install httplib2
   
 8. Create database: $ sudo python database_setup.py
 
