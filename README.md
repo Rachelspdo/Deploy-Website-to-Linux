@@ -234,7 +234,7 @@ Restart Apache with the following command to apply the changes:
 
 ## Catalog Application will be avalable at:
 
-http://54.189.193.41
+http://34.212.20.21
 
 
 
